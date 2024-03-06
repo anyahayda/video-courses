@@ -1,4 +1,23 @@
 <app-breadcrumbs></app-breadcrumbs>
-<app-courses-search></app-courses-search>
-<app-course-form></app-course-form>
-<app-course-item></app-course-item>
+<main class="courses-container">
+  <div class="search-add-container">
+    <div class="row">
+      <app-courses-search class="course-search"></app-courses-search>
+    </div>
+    <div class="row">
+      <button class="course-add">
+        <img class="add-icon" src="assets/icon/plus.svg" alt="Plus icon">
+        Add course
+      </button>
+    </div>
+  </div>
+  <app-course-item
+    *ngFor="let course of courses; trackBy: trackById"
+    [course]="course"
+    (courseClicked)="onCourse($event)">
+  </app-course-item>
+  <button class="load-more-btn" (click)="onLoadMore()">
+    Load more
+  </button>
+</main>
+

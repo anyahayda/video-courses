@@ -1,1 +1,34 @@
-<p>course-item works!</p>
+<div class="course-wrapper" (click)="onCourse(course.id)">
+  <div class="course-info">
+    <div class="column column-1">
+      <div class="row">
+        <div class="column-1-1">
+          <h3 class="course-title">{{ course.title }}</h3>
+        </div>
+        <div class="column-1-2">
+          <div class="course-time">
+            <img class="course-time-icon" src="../../../../../assets/icon/clock.svg" alt="Clock icon">
+            <p class="course-time-info">{{ course.creationDate }}</p>
+          </div>
+          <div class="course-date">
+            <img class="course-date-icon" src="../../../../../assets/icon/calendar.svg" alt="Calendar icon">
+            <p class="course-date-info">{{ course.duration }}</p>
+          </div>
+        </div>
+      </div>
+      <p class="course-description"> {{ course.description }}</p>
+    </div>
+    <div class="column column-2">
+      <div class="course-btn">
+        <button class="course-edit">
+          <img class="edit-icon" src="assets/icon/pencil.svg" alt="Edit icon">
+          Edit
+        </button>
+        <button class="course-delete">
+          <img class="delete-icon" src="assets/icon/trash.svg" alt="Delete icon">
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

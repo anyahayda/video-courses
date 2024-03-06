@@ -1,0 +1,11 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 50px;
+  padding-left: 50px;
+
+  .nav {
+    font-size: 16px;
+  }
+}

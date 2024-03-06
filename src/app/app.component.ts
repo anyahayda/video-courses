@@ -8,7 +8,7 @@ import {CoursesListComponent} from "./features/courses";
   standalone: true,
   imports: [RouterOutlet, HeaderComponent, FooterComponent, CoursesListComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.scss'
 })
 export class AppComponent {
 }

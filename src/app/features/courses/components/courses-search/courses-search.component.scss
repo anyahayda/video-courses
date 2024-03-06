@@ -1,0 +1,27 @@
+.search-container {
+  padding-top: 20px;
+
+  .search-input {
+    padding-left: 45px;
+    background-image: url('/assets/icon/search.svg');
+    background-size: 20px;
+    font-size: 14px;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 40px;
+    width: 400px;
+  }
+
+  .search-btn {
+    background-color: #9dc939;
+    border: #9dc939;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #fff;
+    height: 43px;
+    margin-left: 10px;
+    padding: 0 20px;
+  }
+}

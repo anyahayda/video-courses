@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #484352;
+  color: white;
+  height: 60px;
+  font-size: 14px;
+
+  .copyright {
+    margin-right: 50px;
+  }
+}
